@@ -41,10 +41,10 @@ end
 require 'RedCloth'
 Redmine::Plugin.register :redmine_wiki_notes do
   name 'Redmine Wiki Notes plugin'
-  author 'Daniel Seifert'
+  author 'Daniel Seifert, Victor Laborie'
   description 'Allows adding different kinds of notes into a wiki page'
-  url "http://www.github.com/dseifert/redmine_wiki_notes" if respond_to?(:url)
-  version '0.0.2'
+  url "http://www.github.com/vlaborie/redmine_wiki_notes" if respond_to?(:url)
+  version '0.0.3'
   requires_redmine :version_or_higher => '2.3.0'
 
   RedCloth3::ALLOWED_TAGS << "div"
