@@ -38,7 +38,7 @@ else
   end
 end
 
-require 'redcloth3'
+require 'RedCloth'
 Redmine::Plugin.register :redmine_wiki_notes do
   name 'Redmine Wiki Notes plugin'
   author 'Daniel Seifert'
