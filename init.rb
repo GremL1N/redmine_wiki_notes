@@ -28,14 +28,12 @@ def init_redmine_wiki_notes
   end
 end
 
-if Rails::VERSION::MAJOR >= 3
-  ActionDispatch::Callbacks.to_prepare do
-    init_redmine_wiki_notes
-  end
-else
-  Dispatcher.to_prepare :redmine_wiki_notes do
-    init_redmine_wiki_notes
-  end
+if Rails::VERSION::MAJOR >= 5 and Rails::VERSION::MINOR >= 1
+  reloader = ActiveSupport::Reloader
+  reloader = ActionDispatch::Callbacks
+end
+reloader.to_prepare do
+  init_redmine_wiki_notes
 end
 
 require 'RedCloth'
