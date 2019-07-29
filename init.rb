@@ -30,6 +30,7 @@ end
 
 if Rails::VERSION::MAJOR >= 5 and Rails::VERSION::MINOR >= 1
   reloader = ActiveSupport::Reloader
+else
   reloader = ActionDispatch::Callbacks
 end
 reloader.to_prepare do
