@@ -1,41 +1,45 @@
 .noteclassic, .noteimportant, .notewarning, .notetip {
   margin: 2em;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70% !important;
+  margin-left: 5px;
+  margin-right: 5px;
   min-height: 40px;
   clear: left;
   text-align: justify;
   vertical-align: middle;
   border-collapse: collapse;
-  padding: 15px 20px 15px 80px;
-  background-position: 20px 50%;
+  padding: 5px 20px 5px 80px;
+  background-position: 20px 15px;
   background-repeat: no-repeat;
-  -moz-border-radius: 20px;
-  -khtml-border-radius: 20px;
-  border-radius: 20px;
+  -moz-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #fff;
 }
  
 .noteclassic {
   /*border: 1px solid #99D;*/
-  background-color: #eef;
+  background-color: #E0EFFF;
   background-image: url(../images/note.png);
+  border-color: #9EB6D4;
 }
  
 .noteimportant {
   /*border: 1px solid #ff0;*/
-  background-color: #ffc;
+  background-color: #ffd;
   background-image: url(../images/important.png);
+  border-color: #F7DF92;
 }
  
 .notewarning {
   /*border: 1px solid #d99;*/
-  background-color: #fdd;
+  background-color: #FFE7E7;
   background-image: url(../images/warning.png);
+  border-color: #DF9898;
 }
  
 .notetip {
   /*border: 1px solid #9d9;*/
-  background-color: #dfd;
+  background-color: #DDFADE;
   background-image: url(../images/tip.png);
+  border-color: #9EC49F;
 }
