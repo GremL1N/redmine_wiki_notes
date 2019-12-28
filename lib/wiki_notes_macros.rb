@@ -9,7 +9,7 @@ module WikiNotesMacro
     macro :note, :parse_args => false do |obj, args, text|
       o = textilizable(args)
       if text.present?
-        o << textilizable(text, :object => obj, :headings => false)
+        o += textilizable(text, :object => obj, :headings => false)
       end
       content_tag('div', o.html_safe, :class => "noteclassic")
     end
@@ -18,7 +18,7 @@ module WikiNotesMacro
     macro :tip, :parse_args => false do |obj, args, text|
       o = textilizable(args)
       if text.present?
-        o << textilizable(text, :object => obj, :headings => false)
+        o += textilizable(text, :object => obj, :headings => false)
       end
       content_tag('div', o.html_safe, :class => "notetip")
     end
@@ -27,7 +27,7 @@ module WikiNotesMacro
     macro :important, :parse_args => false do |obj, args, text|
       o = textilizable(args)
       if text.present?
-        o << textilizable(text, :object => obj, :headings => false)
+        o += textilizable(text, :object => obj, :headings => false)
       end
       content_tag('div', o.html_safe, :class => "noteimportant")
     end
@@ -36,7 +36,7 @@ module WikiNotesMacro
     macro :warning, :parse_args => false do |obj, args, text|
       o = textilizable(args)
       if text.present?
-        o << textilizable(text, :object => obj, :headings => false)
+        o += textilizable(text, :object => obj, :headings => false)
       end
       content_tag('div', o.html_safe, :class => "notewarning")
     end
