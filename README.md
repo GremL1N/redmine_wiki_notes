@@ -46,7 +46,7 @@ This is important message. Heed my words.
 }}
 ~~~
 
-![Screenshot](screenshot.jpg?raw=true "Screenshot")
+![Screenshot](screenshot.png?raw=true "Screenshot")
 
 ## Credits
 
